@@ -20,8 +20,11 @@
     --color-xdark-blue : hsl(216, 12%, 8%);
 }
 body{
-    margin:30px;
     background-color: var(--color-xdark-blue);
+    display: flex; 
+    justify-content: center;
+     margin: 5rem; 
+    /* margin:3em */
 }
 .main{
     border-radius: 30px;
@@ -30,38 +33,94 @@ body{
     max-width: 72rem;
     max-height: 72rem;
     height: 55rem;
+    min-width: 60rem;
+  
     /* min-height: 55rem; */
 }
+.picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+}
+/* .bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(216, 12%, 8%, 0.2); ;
+}
+.sf{
+    text-align: center;
+    margin-top: 8.9em;
+    font-stretch: condensed;
+    position: absolute;
+    word-wrap: break-word;
+    font-size: 8rem;
+    height: 100%;
+    max-height: 100%;
+    max-width: 30rem;
+    color: var(--color-lgrey); */
+/* background-color: hsl(216, 12%, 8%, 0.6);    */
+
+/* .odin{
+    opacity: 70%;
+    background-color: hsl(216, 12%, 8%, 0.3);
+    position: absolute;
+    max-height: 30rem;
+    width: auto;
+
+    z-index: 1;
+
+} */
 .picture img{
     max-width: 30rem;
     height: 100%;
-    /* min-height: 100%; */
+
     object-fit: cover;
     object-position: 70%;
+    
 }
+
 .form{
+
     background-image: linear-gradient( var(--color-dark-blue),var(--color-xdark-blue));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.title{
+    height: 20%;
+    font-family: a;
+    color: #503795;
+    /* position: absolute;
+    transform: translate(100%, 2rem); */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* padding-top: 2em;
+    margin-bottom: -1.4rem; */
 }
 .paragraph{
     color: var(--color-lgrey);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-family: a;
     line-height: 2rem;
     /* border:solid red; */
     height: 35%;
-    padding: 5rem
+    padding: 5rem;
+    overflow: hidden;
+    padding-top: 2rem;
 }
 .formbox{
     display: flex;
     font-family: b ;
     background-color: hsl(213, 19%, 18%, 0.5);
-    box-shadow: 1px 1px 2px;
+    /* box-shadow: 1px 1px 2em #4f449a; */
     border:solid #503795;
     height: 30%;
     border-left:none;
@@ -105,9 +164,17 @@ body{
 }
 
 .buttonbox{
+    /* display: relative; */
     font-family: b;
     height:35%;
     padding: 4.5rem
+}
+.buttonbox .error{
+    display: none;
+    position: absolute;
+    color: var(--color-lgrey);
+    transform: translate(0rem, -2.5rem);
+
 }
 .create-account{
     color: var(--color-lgrey);
