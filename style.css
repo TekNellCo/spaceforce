@@ -40,7 +40,7 @@ body{
     object-position: 70%;
 }
 .form{
-    background-image: linear-gradient(var(--color-dark-blue),var(--color-xdark-blue));
+    background-image: linear-gradient( var(--color-dark-blue),var(--color-xdark-blue));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -64,6 +64,8 @@ body{
     box-shadow: 1px 1px 2px;
     border:solid #503795;
     height: 30%;
+    border-left:none;
+    border-right: none;
 }
 .formbox legend{
     color:#503795;
@@ -76,6 +78,16 @@ body{
 .formbox input{
     width: 86%;
     height: 2.3rem;
+    background-color: var(--color-xdark-blue);
+    border: none;
+    color: var(--color-lgrey);
+    font-size: 1em;
+}
+.formbox input:active{
+    background-color: var(--color-xdark-blue);
+}
+.formbox input:invalid{
+    border:solid red;
 }
 .leftform{
     display: flex;
@@ -94,10 +106,26 @@ body{
 
 .buttonbox{
     font-family: b;
-   border: solid green;
     height:35%;
     padding: 4.5rem
 }
 .create-account{
-    
+    color: var(--color-lgrey);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    width: 12rem;
+    height: 2.7rem;
+    border-radius: 10px;
+    background-color: var(--color-dark-blue);
+    border: none;
+    cursor: pointer;
+}
+.create-account:active{
+    background-color: #503795;
+    cursor: pointer;
+}
+.buttonbox p{
+    margin-top:1.7rem;
+    color: var(--color-med-grey);
+    letter-spacing: 0.1rem;
 }
